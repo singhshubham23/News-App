@@ -35,7 +35,7 @@ export class News extends Component {
   }
 
   async fetchNews(page = 1) {
-    const url = `http://localhost:5000/api/news?category=${this.props.category}&page=${page}&pageSize=${this.props.pageSize}`;
+    const url = ` https://newsbackend-uwym.onrender.com/api/news?category=${this.props.category}&page=${page}&pageSize=${this.props.pageSize}`;
 
     try {
       this.setState({ loading: true });
